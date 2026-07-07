@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="si">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GoviYa.lk - Paddy Seeds | Variety Guide for Sri Lankan Farmers</title>
+    <meta name="description" content="Find the best paddy seed varieties for Sri Lanka - Short duration, medium duration, and traditional heritage seeds with detailed growing guides.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700;14..32,800&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome 6 (Free) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Scroll Progress Bar -->
+    <div id="scroll-progress"></div>
+
+    <!-- Toast Container -->
+    <div id="toast-container"></div>
+
+    <!-- Header / Navigation -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <span class="logo-icon">🌾</span>GoviYa<span>.lk</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="description.html">Description</a></li>
+                <li><a href="paddy-seeds.html" class="active">Paddy Seeds</a></li>
+                <li><a href="diseases.html">Diseases &amp; Medicines</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+
+        <!-- Page Hero -->
+        <section class="page-hero seeds-hero">
+            <div class="page-hero-overlay">
+                <div class="page-hero-content animate-fade">
+                    <span class="hero-badge">Seed Selection Guide</span>
+                    <h1>Paddy Seeds</h1>
+                    <p>Choose the right paddy variety for your farm and maximize your harvest yield</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seeds Main Content -->
+        <section class="seeds-main">
+            <div class="container">
+
+                <!-- Introduction -->
+                <div class="seeds-intro animate-up">
+                    <div class="section-header">
+                        <span class="section-tag">Seed Varieties</span>
+                        <h2 class="section-title">වී වර්ග පිළිබඳ තොරතුරු</h2>
+                        <p class="section-subtitle">Discover the best paddy varieties suitable for different seasons and conditions in Sri Lanka</p>
+                    </div>
+                    <div class="intro-info">
+                        <div class="info-box">
+                            <span class="info-icon">
+                                <img src="image/paddy seeds/wheat.png" alt="Climate" width="46" height="46">
+                            </span>
+                            <p>Choose seeds based on your region's climate, soil type, and water availability</p>
+                        </div>
+                        <div class="info-box">
+                            <span class="info-icon">
+                                <img src="image/paddy seeds/calendar.png" alt="Season" width="46" height="46">
+                            </span>
+                            <p>Consider the growing season (Maha/Yala) and duration for optimal results</p>
+                        </div>
+                        <div class="info-box">
+                            <span class="info-icon">
+                                <img src="image/paddy seeds/trophy.png" alt="Quality" width="46" height="46">
+                            </span>
+                            <p>Select certified seeds from trusted government sources for better yields</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Search & Filter Bar -->
+                <div class="seed-search-bar animate-up">
+                    <div class="seed-search-input-wrap">
+                        <span class="search-icon">🔍</span>
+                        <input type="text" id="seed-search" placeholder="Search by variety name, zone, or feature...">
+                    </div>
+                    <div class="filter-pills">
+                        <button class="filter-pill active" data-filter="all">All</button>
+                        <button class="filter-pill" data-filter="short">⚡ Short Duration</button>
+                        <button class="filter-pill" data-filter="medium">🌾 Medium Duration</button>
+                        <button class="filter-pill" data-filter="traditional">🍃 Traditional</button>
+                        <button class="filter-pill" data-filter="dry">☀️ Dry Zone</button>
+                        <button class="filter-pill" data-filter="wet">🌧️ Wet Zone</button>
+                    </div>
+                </div>
+
+                <!-- No Results Message -->
+                <div id="no-results">
+                    <span class="no-results-icon">🔍</span>
+                    <p>No varieties found matching your search. Try a different keyword or filter.</p>
+                </div>
+
+                <!-- Seed Categories -->
+                <div class="seed-categories">
+
+                    <!-- Short Duration Seeds -->
+                    <div class="seed-category animate-up">
+                        <div class="category-header">
+                            <span class="category-icon">
+                                <img src="image/paddy seeds/lightning.png" alt="Short Duration" width="40" height="40">
+                            </span>
+                            <div>
+                                <h3>Short Duration Seeds</h3>
+                            </div>
+                            <span class="category-badge">3 – 3.5 Months</span>
+                        </div>
+                        <p class="category-description">
+                            These varieties mature quickly and are ideal for areas with water scarcity or for farmers who want to grow multiple crops per year. Best for Yala season in dry zones.
+                        </p>
+                        <div class="seed-varieties">
+                            <div class="variety-card">
+                                <h4>BG 300</h4>
+                                <ul class="variety-details">
+                                    <li><span>Duration:</span> 95–100 days</li>
+                                    <li><span>Yield:</span> 4.5–5.0 t/ha</li>
+                                    <li><span>Best for:</span> Dry zone, Yala season</li>
+                                    <li><span>Features:</span> Drought tolerant, good grain quality</li>
+                                </ul>
+                                <span class="variety-tag">Recommended</span>
+                            </div>
+                            <div class="variety-card">
+                                <h4>BG 352</h4>
+                                <ul class="variety-details">
+                                    <li><span>Duration:</span> 100–105 days</li>
+                                    <li><span>Yield:</span> 4.8–5.2 t/ha</li>
+                                    <li><span>Best for:</span> Intermediate zone</li>
+                                    <li><span>Features:</span> Disease resistant, high quality</li>
+                                </ul>
+                                <span class="variety-tag">Popular</span>
+                            </div>
+                            <div class="variety-card">
+                                <h4>AT 306</h4>
+                                <ul class="variety-details">
+                                    <li><span>Duration:</span> 90–95 days</li>
+                                    <li><span>Yield:</span> 4.0–4.5 t/ha</li>
+                                    <li><span>Best for:</span> Wet zone, Maha season</li>
+                                    <li><span>Features:</span> Early maturing, good for organic farming</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Medium Duration Seeds -->
+                    <div class="seed-category animate-up">
+                        <div class="category-header">
+                            <span class="category-icon">
+                                <img src="image/paddy seeds/wheat.png" alt="Medium Duration" width="40" height="40">
+                            </span>
+                            <div>
+                                <h3>Medium Duration Seeds</h3>
+                            </div>
+                            <span class="category-badge">4 – 4.5 Months</span>
+                        </div>
+                        <p class="category-description">
+                            These varieties offer a balance between duration and yield, making them suitable for most farming conditions across Sri Lanka. Ideal for both Maha and Yala seasons.
+                        </p>
+                        <div class="seed-varieties">
+                            <div class="variety-card">
+                                <h4>BG 400</h4>
+                                <ul class="variety-details">
+                                    <li><span>Duration:</span> 120–130 days</li>
+                                    <li><span>Yield:</span> 5.5–6.0 t/ha</li>
+                                    <li><span>Best for:</span> All zones</li>
+                                    <li><span>Features:</span> High yield, good tillering ability</li>
+                                </ul>
+                                <span class="variety-tag">Best Seller</span>
+                            </div>
+                            <div class="variety-card">
+                                <h4>AT 401</h4>
+                                <ul class="variety-details">
+                                    <li><span>Duration:</span> 125–135 days</li>
+                                    <li><span>Yield:</span> 5.2–5.8 t/ha</li>
+                                    <li><span>Best for:</span> Dry and intermediate zones</li>
+                                    <li><span>Features:</span> Blast resistant, excellent grain quality</li>
+                                </ul>
+                                <span class="variety-tag">Premium</span>
+                            </div>
+                            <div class="variety-card">
+                                <h4>Bw 367</h4>
+                                <ul class="variety-details">
+                                    <li><span>Duration:</span> 115–125 days</li>
+                                    <li><span>Yield:</span> 5.0–5.5 t/ha</li>
+                                    <li><span>Best for:</span> Wet and intermediate zones</li>
+                                    <li><span>Features:</span> Good for heavy soils, high milling quality</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Traditional Seeds -->
+                    <div class="seed-category animate-up">
+                        <div class="category-header">
+                            <span class="category-icon">
+                                <img src="image/paddy seeds/leaves-design.png" alt="Traditional" width="40" height="40">
+                            </span>
+                            <div>
+                                <h3>Traditional Seeds</h3>
+                            </div>
+                            <span class="category-badge">Heritage Varieties</span>
+                        </div>
+                        <p class="category-description">
+                            These indigenous varieties are known for their medicinal properties, rich nutrition, and unique flavors. They are well-adapted to local conditions and highly valued in specialty markets.
+                        </p>
+                        <div class="seed-varieties">
+                            <div class="variety-card traditional">
+                                <h4>සුවඳැල් (Suwandal)</h4>
+                                <ul class="variety-details">
+                                    <li><span>Duration:</span> 140–150 days</li>
+                                    <li><span>Yield:</span> 3.0–3.5 t/ha</li>
+                                    <li><span>Features:</span> Aromatic, medicinal properties</li>
+                                    <li><span>Best for:</span> Traditional farming, special occasions</li>
+                                </ul>
+                                <span class="variety-tag heritage">Heritage</span>
+                            </div>
+                            <div class="variety-card traditional">
+                                <h4>කුරුළුතුඩ (Kuruluthuda)</h4>
+                                <ul class="variety-details">
+                                    <li><span>Duration:</span> 135–145 days</li>
+                                    <li><span>Yield:</span> 3.2–3.8 t/ha</li>
+                                    <li><span>Features:</span> High protein, good for diabetes</li>
+                                    <li><span>Best for:</span> Health-conscious consumers</li>
+                                </ul>
+                                <span class="variety-tag heritage">Traditional</span>
+                            </div>
+                            <div class="variety-card traditional">
+                                <h4>කළුහීනටි (Kaluheenati)</h4>
+                                <ul class="variety-details">
+                                    <li><span>Duration:</span> 140–155 days</li>
+                                    <li><span>Yield:</span> 2.8–3.2 t/ha</li>
+                                    <li><span>Features:</span> Rich in antioxidants, iron content</li>
+                                    <li><span>Best for:</span> Medicinal rice, specialty foods</li>
+                                </ul>
+                                <span class="variety-tag heritage">Premium</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Seed Selection Guide -->
+                <div class="selection-guide animate-up">
+                    <div class="section-header">
+                        <span class="section-tag">Selection Guide</span>
+                        <h2 class="section-title">How to Choose the Right Seeds</h2>
+                        <p class="section-subtitle">Key factors to consider when selecting paddy seeds for your farm</p>
+                    </div>
+                    <div class="guide-grid">
+                        <div class="guide-item">
+                            <div class="guide-number">1</div>
+                            <div class="guide-content">
+                                <h4>Climate &amp; Zone</h4>
+                                <p>Choose varieties suited to your region — wet zone, dry zone, or intermediate zone — for best performance.</p>
+                            </div>
+                        </div>
+                        <div class="guide-item">
+                            <div class="guide-number">2</div>
+                            <div class="guide-content">
+                                <h4>Water Availability</h4>
+                                <p>Consider your irrigation access. Short duration seeds are best for areas with limited water supply.</p>
+                            </div>
+                        </div>
+                        <div class="guide-item">
+                            <div class="guide-number">3</div>
+                            <div class="guide-content">
+                                <h4>Market Demand</h4>
+                                <p>Research which varieties command premium prices in your local market for better return on investment.</p>
+                            </div>
+                        </div>
+                        <div class="guide-item">
+                            <div class="guide-number">4</div>
+                            <div class="guide-content">
+                                <h4>Disease Resistance</h4>
+                                <p>Select varieties with natural resistance to common diseases in your area to reduce crop losses.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Call to Action -->
+        <section class="cta-section">
+            <div class="container">
+                <div class="cta-content animate-fade">
+                    <h2>Need Help with Seed Selection?</h2>
+                    <p>Contact our agricultural experts for personalized guidance on choosing the best paddy seeds for your specific farm conditions</p>
+                    <div class="cta-buttons">
+                        <a href="about.html" class="btn btn-primary">
+                            <span class="btn-icon">📞</span> Contact Experts
+                        </a>
+                        <a href="diseases.html" class="btn btn-secondary">
+                            <span class="btn-icon">🔬</span> View Diseases
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <div class="logo">🌾 GoviYa<span>.lk</span></div>
+                <p>Empowering Sri Lankan paddy farmers with modern agricultural knowledge and expert guidance.</p>
+                <div class="footer-social">
+                    <a href="#" class="social-link" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-link" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-link" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" class="social-link" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul class="footer-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="description.html">Description</a></li>
+                    <li><a href="paddy-seeds.html">Paddy Seeds</a></li>
+                    <li><a href="diseases.html">Diseases &amp; Medicines</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Helplines</h4>
+                <ul class="footer-links">
+                    <li><a href="#">1920 – Govi Sevana</a></li>
+                    <li><a href="#">1919 – Agri Emergency</a></li>
+                    <li><a href="#">+94 81 2388331 – Dept.</a></li>
+                    <li><a href="#">+94 11 2869553 – Ministry</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 GoviYa.lk — All Rights Reserved</p>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" title="Back to top">↑</button>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+</html>

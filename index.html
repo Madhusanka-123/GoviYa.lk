@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="si">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GoviYa.lk - Smart Paddy Farming Solutions | Sri Lanka</title>
+  <meta name="description" content="GoviYa.lk empowers Sri Lankan paddy farmers with smart farming guides, seed selection tools, disease management, and expert agricultural advice.">
+  <!-- Font Awesome (free icons) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700;14..32,800&display=swap" rel="stylesheet">
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Scroll Progress Bar -->
+  <div id="scroll-progress"></div>
+
+  <!-- Toast Container -->
+  <div id="toast-container"></div>
+
+  <header>
+    <nav class="navbar">
+      <div class="logo">
+        <span class="logo-icon">🌾</span>GoviYa<span>.lk</span>
+      </div>
+      <ul class="nav-links">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="description.html">Description</a></li>
+        <li><a href="paddy-seeds.html">Paddy Seeds</a></li>
+        <li><a href="diseases.html">Diseases &amp; Medicines</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+      <div class="menu-toggle" id="mobile-menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero-section">
+      <img src="image/Home page/bckground.jpg" class="hero-bg" alt="Sri Lankan Paddy Fields">
+      <div class="hero-overlay"></div>
+
+      <div class="hero-content animate-fade">
+        <span class="hero-badge">Welcome to GoviYa.lk</span>
+        <h1>GoviYa<span style="color: var(--accent-color)">.lk</span></h1>
+        <div class="typewriter-wrap">
+          <span class="typewriter-text"></span><span class="typewriter-cursor"></span>
+        </div>
+        <p>Modernizing Sri Lanka's Paddy Cultivation with Smart Technology, Expert Guidance &amp; Real-Time Resources</p>
+
+        <div class="hero-cta-group">
+          <a href="description.html" class="btn btn-primary">
+            <span class="btn-icon">🚀</span> Get Started
+          </a>
+          <a href="paddy-seeds.html" class="btn btn-secondary">
+            <span class="btn-icon">🌾</span> Explore Seeds
+          </a>
+        </div>
+
+        <div class="hero-stats">
+          <div class="stat-item">
+            <span class="stat-number" data-target="10000+">10K+</span>
+            <span class="stat-label">Farmers Connected</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number" data-target="500+">500+</span>
+            <span class="stat-label">Expert Articles</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number" data-target="24/7">24/7</span>
+            <span class="stat-label">Support Available</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number" data-target="40%">40%</span>
+            <span class="stat-label">Avg. Yield Increase</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features-section">
+      <div class="container">
+        <div class="section-header animate-up">
+          <span class="section-tag">Features</span>
+          <h2 class="section-title">Empowering Sri Lankan Farmers</h2>
+          <p class="section-subtitle">Your comprehensive platform for modern paddy farming techniques, expert advice, and real-time agricultural resources.</p>
+        </div>
+        <div class="features-grid">
+          <div class="feature-card animate-up">
+            <div class="feature-icon">
+              <img src="image/Home page/wheat.png" alt="Smart Farming" width="46" height="46">
+            </div>
+            <h3>Smart Farming</h3>
+            <p>Access the latest techniques and technologies for efficient paddy cultivation and maximize your yield.</p>
+          </div>
+          <div class="feature-card animate-up">
+            <div class="feature-icon">
+              <img src="image/Home page/histogram.png" alt="Weather Updates" width="46" height="46">
+            </div>
+            <h3>Weather Updates</h3>
+            <p>Stay informed with real-time weather forecasts and climate data tailored for your farming region.</p>
+          </div>
+          <div class="feature-card animate-up">
+            <div class="feature-icon">
+              <img src="image/Home page/farmer.png" alt="Expert Advice" width="46" height="46">
+            </div>
+            <h3>Expert Advice</h3>
+            <p>Get guidance from certified agricultural experts on seed selection, disease control, and best practices.</p>
+          </div>
+          <div class="feature-card animate-up">
+            <div class="feature-icon">
+              <span style="font-size: 46px">🛡️</span>
+            </div>
+            <h3>Disease Management</h3>
+            <p>Identify and treat paddy diseases early with our comprehensive disease library and treatment guides.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Quick Links Section -->
+    <section style="padding: 80px 0; background: var(--bg-light);">
+      <div class="container">
+        <div class="section-header animate-up">
+          <span class="section-tag">Quick Access</span>
+          <h2 class="section-title">Explore Our Resources</h2>
+          <p class="section-subtitle">Everything you need for successful paddy cultivation, all in one place.</p>
+        </div>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 24px; margin-top: 0;">
+          <a href="description.html" style="background: white; padding: 32px; border-radius: 20px; text-decoration: none; display: flex; gap: 18px; align-items: flex-start; box-shadow: var(--shadow-sm); transition: var(--transition); border: 1px solid transparent;" onmouseover="this.style.boxShadow='var(--shadow-hover)';this.style.transform='translateY(-6px)';this.style.borderColor='rgba(46,125,50,0.15)'" onmouseout="this.style.boxShadow='var(--shadow-sm)';this.style.transform='translateY(0)';this.style.borderColor='transparent'">
+            <span style="font-size: 36px; flex-shrink: 0;">📖</span>
+            <div>
+              <h3 style="font-size: 1.1rem; font-weight: 700; color: var(--text-dark); margin-bottom: 6px;">Cultivation Guide</h3>
+              <p style="color: var(--text-muted); font-size: 0.88rem; line-height: 1.6; margin: 0;">Step-by-step paddy cultivation stages from land prep to harvest</p>
+            </div>
+          </a>
+          <a href="paddy-seeds.html" style="background: white; padding: 32px; border-radius: 20px; text-decoration: none; display: flex; gap: 18px; align-items: flex-start; box-shadow: var(--shadow-sm); transition: var(--transition); border: 1px solid transparent;" onmouseover="this.style.boxShadow='var(--shadow-hover)';this.style.transform='translateY(-6px)';this.style.borderColor='rgba(46,125,50,0.15)'" onmouseout="this.style.boxShadow='var(--shadow-sm)';this.style.transform='translateY(0)';this.style.borderColor='transparent'">
+            <span style="font-size: 36px; flex-shrink: 0;">🌾</span>
+            <div>
+              <h3 style="font-size: 1.1rem; font-weight: 700; color: var(--text-dark); margin-bottom: 6px;">Paddy Seed Varieties</h3>
+              <p style="color: var(--text-muted); font-size: 0.88rem; line-height: 1.6; margin: 0;">Browse short, medium duration and traditional heritage seeds</p>
+            </div>
+          </a>
+          <a href="diseases.html" style="background: white; padding: 32px; border-radius: 20px; text-decoration: none; display: flex; gap: 18px; align-items: flex-start; box-shadow: var(--shadow-sm); transition: var(--transition); border: 1px solid transparent;" onmouseover="this.style.boxShadow='var(--shadow-hover)';this.style.transform='translateY(-6px)';this.style.borderColor='rgba(46,125,50,0.15)'" onmouseout="this.style.boxShadow='var(--shadow-sm)';this.style.transform='translateY(0)';this.style.borderColor='transparent'">
+            <span style="font-size: 36px; flex-shrink: 0;">🔬</span>
+            <div>
+              <h3 style="font-size: 1.1rem; font-weight: 700; color: var(--text-dark); margin-bottom: 6px;">Disease & Treatment</h3>
+              <p style="color: var(--text-muted); font-size: 0.88rem; line-height: 1.6; margin: 0;">Identify fungal, bacterial & pest diseases with treatment guides</p>
+            </div>
+          </a>
+          <a href="about.html" style="background: white; padding: 32px; border-radius: 20px; text-decoration: none; display: flex; gap: 18px; align-items: flex-start; box-shadow: var(--shadow-sm); transition: var(--transition); border: 1px solid transparent;" onmouseover="this.style.boxShadow='var(--shadow-hover)';this.style.transform='translateY(-6px)';this.style.borderColor='rgba(46,125,50,0.15)'" onmouseout="this.style.boxShadow='var(--shadow-sm)';this.style.transform='translateY(0)';this.style.borderColor='transparent'">
+            <span style="font-size: 36px; flex-shrink: 0;">📞</span>
+            <div>
+              <h3 style="font-size: 1.1rem; font-weight: 700; color: var(--text-dark); margin-bottom: 6px;">Contact & Support</h3>
+              <p style="color: var(--text-muted); font-size: 0.88rem; line-height: 1.6; margin: 0;">Reach our expert team and access government helplines</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+      <div class="container">
+        <div class="cta-content animate-fade">
+          <h2>Ready to Transform Your Farming?</h2>
+          <p>Explore our comprehensive guides on paddy seeds, diseases, and modern agricultural practices trusted by thousands of Sri Lankan farmers.</p>
+          <div class="cta-buttons">
+            <a href="paddy-seeds.html" class="btn btn-primary">
+              <span class="btn-icon">🌾</span> Explore Seeds
+            </a>
+            <a href="diseases.html" class="btn btn-secondary">
+              <span class="btn-icon">🔬</span> View Diseases
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Premium Footer -->
+  <footer>
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="logo">🌾 GoviYa<span>.lk</span></div>
+        <p>Empowering Sri Lankan paddy farmers with modern agricultural knowledge, smart farming techniques, and expert guidance since 2024.</p>
+        <!-- Social Icons with proper Font Awesome classes -->
+        <div class="footer-social">
+          <a href="#" class="social-link" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="social-link" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="social-link" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#" class="social-link" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="description.html">Description</a></li>
+          <li><a href="paddy-seeds.html">Paddy Seeds</a></li>
+          <li><a href="diseases.html">Diseases &amp; Medicines</a></li>
+          <li><a href="about.html">About Us</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Helplines</h4>
+        <ul class="footer-links">
+          <li><a href="#">1920 – Govi Sevana</a></li>
+          <li><a href="#">1919 – Agri Emergency</a></li>
+          <li><a href="#">+94 81 2388331 – Dept.</a></li>
+          <li><a href="#">+94 11 2869553 – Ministry</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 GoviYa.lk — All Rights Reserved</p>
+    </div>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <button id="back-to-top" title="Back to top">↑</button>
+
+  <script src="script.js"></script>
+</body>
+</html>

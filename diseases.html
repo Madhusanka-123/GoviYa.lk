@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="si">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GoviYa.lk - Paddy Diseases &amp; Medicines | Sri Lankan Crop Health Guide</title>
+    <meta name="description" content="Identify and treat common paddy diseases in Sri Lanka. Comprehensive guide to fungal, bacterial, viral diseases and pest management for rice farmers.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700;14..32,800&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome 6 (Free) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Scroll Progress Bar -->
+    <div id="scroll-progress"></div>
+
+    <!-- Toast Container -->
+    <div id="toast-container"></div>
+
+    <!-- Header / Navigation -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <span class="logo-icon">🌾</span>GoviYa<span>.lk</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="description.html">Description</a></li>
+                <li><a href="paddy-seeds.html">Paddy Seeds</a></li>
+                <li><a href="diseases.html" class="active">Diseases &amp; Medicines</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+
+        <!-- Page Hero -->
+        <section class="page-hero diseases-hero">
+            <div class="page-hero-overlay">
+                <div class="page-hero-content animate-fade">
+                    <span class="hero-badge">Crop Health</span>
+                    <h1>Diseases &amp; Medicines</h1>
+                    <p>රෝග සහ ප්‍රතිකාර</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Diseases Main Content -->
+        <section class="diseases-main">
+            <div class="container">
+
+                <!-- Introduction -->
+                <div class="diseases-intro animate-up">
+                    <div class="section-header">
+                        <span class="section-tag">Disease Management</span>
+                        <h2 class="section-title">Common Paddy Diseases</h2>
+                        <p class="section-subtitle">Learn to identify and manage common diseases affecting rice cultivation</p>
+                    </div>
+                    <div class="intro-stats">
+                        <div class="stat-box">
+                            <span class="stat-number" data-target="15+">15+</span>
+                            <span class="stat-label">Common Diseases Documented</span>
+                        </div>
+                        <div class="stat-box">
+                            <span class="stat-number" data-target="30%">30%</span>
+                            <span class="stat-label">Potential Crop Loss if Untreated</span>
+                        </div>
+                        <div class="stat-box">
+                            <span class="stat-number" data-target="24/7">24/7</span>
+                            <span class="stat-label">Expert Support Available</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Disease Categories -->
+                <div class="disease-categories">
+
+                    <!-- Fungal Diseases -->
+                    <div class="disease-category animate-up">
+                        <div class="category-header">
+                            <span class="category-icon">
+                                <img src="image/Diseases & Medicines/Fungal .png" alt="Fungal Diseases" width="50" height="50">
+                            </span>
+                            <div>
+                                <h3>Fungal Diseases</h3>
+                                <span class="category-badge">දිලීර රෝග</span>
+                            </div>
+                        </div>
+                        <p class="category-description">
+                            Fungal diseases are caused by various fungi and thrive in humid conditions. Early detection and proper treatment are essential.
+                        </p>
+                        <div class="disease-grid">
+                            <!-- Disease Card 1 -->
+                            <div class="disease-card">
+                                <div class="disease-header">
+                                    <div>
+                                        <h4>කොළ පාළුව</h4>
+                                        <span class="disease-type">Paddy Blast</span>
+                                    </div>
+                                    <span class="disease-risk danger">High Risk</span>
+                                </div>
+                                <div class="disease-body">
+                                    <div class="disease-section">
+                                        <h5>🔍 Symptoms</h5>
+                                        <p>කොළ මත දියමන්ති හැඩැති ලප ඇතිවීම සහ පසුව කොළ වියළී යාම.</p>
+                                    </div>
+                                    <div class="disease-section">
+                                        <h5>💊 Treatment</h5>
+                                        <p>Tricyclazole දිලීර නාශක භාවිතය, නයිට්‍රජන් පොහොර පමණට වඩා යෙදීමෙන් වැළකීම.</p>
+                                    </div>
+                                    <div class="disease-tags">
+                                        <span class="tag">Fungicide</span>
+                                        <span class="tag">Preventive</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Disease Card 2 -->
+                            <div class="disease-card">
+                                <div class="disease-header">
+                                    <div>
+                                        <h4>කොපු පාළුව</h4>
+                                        <span class="disease-type">Sheath Blight</span>
+                                    </div>
+                                    <span class="disease-risk warning">Medium Risk</span>
+                                </div>
+                                <div class="disease-body">
+                                    <div class="disease-section">
+                                        <h5>🔍 Symptoms</h5>
+                                        <p>කඳ වටා ඇති කොපු මත අළු-දුඹුරු පැහැති ලප හටගෙන පසුව මුළු ශාකයම විනාශ වීම.</p>
+                                    </div>
+                                    <div class="disease-section">
+                                        <h5>💊 Treatment</h5>
+                                        <p>Hexaconazole දිලීර නාශක භාවිතය, පඳුරු අතර වාතාශ්‍රය හොඳින් පවත්වා ගැනීම.</p>
+                                    </div>
+                                    <div class="disease-tags">
+                                        <span class="tag">Fungicide</span>
+                                        <span class="tag">Cultural Control</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Disease Card 3 -->
+                            <div class="disease-card">
+                                <div class="disease-header">
+                                    <div>
+                                        <h4>කඳ මානා රෝගය</h4>
+                                        <span class="disease-type">Stem Rot</span>
+                                    </div>
+                                    <span class="disease-risk danger">High Risk</span>
+                                </div>
+                                <div class="disease-body">
+                                    <div class="disease-section">
+                                        <h5>🔍 Symptoms</h5>
+                                        <p>කඳේ පාදම අසල දුඹුරු-කළු පැහැති ලප ඇතිවීම, කඳ බිඳී වැටීම.</p>
+                                    </div>
+                                    <div class="disease-section">
+                                        <h5>💊 Treatment</h5>
+                                        <p>Propiconazole දිලීර නාශක භාවිතය, කුඹුරේ ජලාපවහනය වැඩිදියුණු කිරීම.</p>
+                                    </div>
+                                    <div class="disease-tags">
+                                        <span class="tag">Fungicide</span>
+                                        <span class="tag">Drainage</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Pest Infestations -->
+                    <div class="disease-category animate-up">
+                        <div class="category-header">
+                            <span class="category-icon">🐛</span>
+                            <div>
+                                <h3>Pest Infestations</h3>
+                                <span class="category-badge">පලිබෝධ රෝග</span>
+                            </div>
+                        </div>
+                        <p class="category-description">
+                            Pests can cause significant damage to paddy crops. Integrated pest management strategies help control infestations effectively.
+                        </p>
+                        <div class="disease-grid">
+                            <!-- Disease Card 4 -->
+                            <div class="disease-card">
+                                <div class="disease-header">
+                                    <div>
+                                        <h4>දුඹුරු පැළ කීඩෑවා</h4>
+                                        <span class="disease-type">Brown Planthopper</span>
+                                    </div>
+                                    <span class="disease-risk critical">Critical</span>
+                                </div>
+                                <div class="disease-body">
+                                    <div class="disease-section">
+                                        <h5>🔍 Symptoms</h5>
+                                        <p>වගාව කහ පැහැ වී වේලී යාම (Hopper burn). පැල්ලම් ලෙස පැතිරී මුළු කුඹුරම විනාශ වීම.</p>
+                                    </div>
+                                    <div class="disease-section">
+                                        <h5>💊 Treatment</h5>
+                                        <p>කුඹුරේ ජලය බැස යාමට හැරීම, කෘෂිකර්ම දෙපාර්තමේන්තුවේ නිර්දේශිත කීඩෑ නාශක යෙදීම.</p>
+                                    </div>
+                                    <div class="disease-tags">
+                                        <span class="tag">Insecticide</span>
+                                        <span class="tag">Water Management</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Disease Card 5 -->
+                            <div class="disease-card">
+                                <div class="disease-header">
+                                    <div>
+                                        <h4>කඳ විදින කීඩෑවා</h4>
+                                        <span class="disease-type">Stem Borer</span>
+                                    </div>
+                                    <span class="disease-risk danger">High Risk</span>
+                                </div>
+                                <div class="disease-body">
+                                    <div class="disease-section">
+                                        <h5>🔍 Symptoms</h5>
+                                        <p>කඳේ සිදුරු ඇතිවීම, ඉදුණු කරල් හිස් වීම, සුදු පැහැති කරල් ඇතිවීම.</p>
+                                    </div>
+                                    <div class="disease-section">
+                                        <h5>💊 Treatment</h5>
+                                        <p>Carbofuran හෝ Fipronil කීඩෑ නාශක යෙදීම. රෝගී ශාක ඉවත් කර පුළුස්සා දැමීම.</p>
+                                    </div>
+                                    <div class="disease-tags">
+                                        <span class="tag">Insecticide</span>
+                                        <span class="tag">Sanitation</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Disease Card 6 -->
+                            <div class="disease-card">
+                                <div class="disease-header">
+                                    <div>
+                                        <h4>කොළ පෙරළන කීඩෑවා</h4>
+                                        <span class="disease-type">Leaf Folder</span>
+                                    </div>
+                                    <span class="disease-risk warning">Medium Risk</span>
+                                </div>
+                                <div class="disease-body">
+                                    <div class="disease-section">
+                                        <h5>🔍 Symptoms</h5>
+                                        <p>කොළ නලාකාරව පෙරළීම, ඇතුළත කොළ පැහැති දළඹුවන් සිටීම.</p>
+                                    </div>
+                                    <div class="disease-section">
+                                        <h5>💊 Treatment</h5>
+                                        <p>Bacillus thuringiensis (Bt) ජෛව කීඩෑ නාශක, Chlorantraniliprole රසායනික කීඩෑ නාශක.</p>
+                                    </div>
+                                    <div class="disease-tags">
+                                        <span class="tag">Bio-control</span>
+                                        <span class="tag">Insecticide</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Viral Diseases -->
+                    <div class="disease-category animate-up">
+                        <div class="category-header">
+                            <span class="category-icon">
+                                <img src="image/Diseases & Medicines/virus.png" alt="Viral Diseases" width="50" height="50">
+                            </span>
+                            <div>
+                                <h3>Viral Diseases</h3>
+                                <span class="category-badge">වෛරස රෝග</span>
+                            </div>
+                        </div>
+                        <p class="category-description">
+                            Viral diseases are transmitted by insect vectors and have no direct cure. Prevention through vector control is crucial.
+                        </p>
+                        <div class="disease-grid">
+                            <!-- Disease Card 7 -->
+                            <div class="disease-card">
+                                <div class="disease-header">
+                                    <div>
+                                        <h4>කහ-කොළ වෛරසය</h4>
+                                        <span class="disease-type">Tungro Virus</span>
+                                    </div>
+                                    <span class="disease-risk critical">Critical</span>
+                                </div>
+                                <div class="disease-body">
+                                    <div class="disease-section">
+                                        <h5>🔍 Symptoms</h5>
+                                        <p>කොළ කහ පැහැ ගැන්වීම, ශාකය වාමන වීම, කරල් ගණන අඩුවීම.</p>
+                                    </div>
+                                    <div class="disease-section">
+                                        <h5>💊 Treatment</h5>
+                                        <p>ප්‍රතිකාරයක් නැත - වැළැක්වීම ප්‍රධානයි. රෝගී ශාක ඉවත් කිරීම, කීඩෑ පාලනය.</p>
+                                    </div>
+                                    <div class="disease-tags">
+                                        <span class="tag">No Cure</span>
+                                        <span class="tag">Prevention</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Disease Card 8 -->
+                            <div class="disease-card">
+                                <div class="disease-header">
+                                    <div>
+                                        <h4>රළු ගස් වෛරසය</h4>
+                                        <span class="disease-type">Ragged Stunt Virus</span>
+                                    </div>
+                                    <span class="disease-risk danger">High Risk</span>
+                                </div>
+                                <div class="disease-body">
+                                    <div class="disease-section">
+                                        <h5>🔍 Symptoms</h5>
+                                        <p>ශාකය රළු ගසක් මෙන් පෙනීම, කොළ මත රැළි ඇතිවීම, කහ පැහැ ලප ඇතිවීම.</p>
+                                    </div>
+                                    <div class="disease-section">
+                                        <h5>💊 Treatment</h5>
+                                        <p>ප්‍රතිකාරයක් නැත. කීඩෑ පාලනය, ප්‍රතිරෝධී වී වර්ග භාවිතය.</p>
+                                    </div>
+                                    <div class="disease-tags">
+                                        <span class="tag">Vector Control</span>
+                                        <span class="tag">Resistant Varieties</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Prevention Tips -->
+                <div class="prevention-section animate-up">
+                    <div class="section-header">
+                        <span class="section-tag">Tips</span>
+                        <h2 class="section-title">Prevention Tips</h2>
+                        <p class="section-subtitle">Proactive measures to protect your paddy crop</p>
+                    </div>
+                    <div class="prevention-grid">
+                        <div class="prevention-item">
+                            <div class="prevention-icon">
+                                <img src="image/Diseases & Medicines/wheat.png" alt="Resistant Varieties" width="50" height="50">
+                            </div>
+                            <h4>Resistant Varieties</h4>
+                            <p>Choose paddy varieties with natural resistance to common diseases.</p>
+                        </div>
+                        <div class="prevention-item">
+                            <div class="prevention-icon">
+                                <img src="image/Diseases & Medicines/drop.png" alt="Water Management" width="50" height="50">
+                            </div>
+                            <h4>Water Management</h4>
+                            <p>Maintain optimal water levels and ensure proper drainage.</p>
+                        </div>
+                        <div class="prevention-item">
+                            <div class="prevention-icon">
+                                <img src="image/Diseases & Medicines/plant.png" alt="Crop Rotation" width="50" height="50">
+                            </div>
+                            <h4>Crop Rotation</h4>
+                            <p>Rotate crops regularly to break disease cycles.</p>
+                        </div>
+                        <div class="prevention-item">
+                            <div class="prevention-icon">
+                                <img src="image/Diseases & Medicines/flask.png" alt="Regular Monitoring" width="50" height="50">
+                            </div>
+                            <h4>Regular Monitoring</h4>
+                            <p>Inspect fields regularly for early detection of diseases.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Emergency Contact -->
+                <div class="emergency-section animate-up">
+                    <div class="emergency-content">
+                        <span class="emergency-icon">🚨</span>
+                        <h3>Emergency Help</h3>
+                        <p>For urgent assistance with paddy diseases, contact our experts immediately</p>
+                        <div class="emergency-contacts">
+                            <div class="contact-item">
+                                <span class="contact-label">📞</span>
+                                <span class="contact-value">1919</span>
+                            </div>
+                            <div class="contact-item">
+                                <span class="contact-label">📧</span>
+                                <span class="contact-value">help@goviya.lk</span>
+                            </div>
+                            <div class="contact-item">
+                                <span class="contact-label">🕐</span>
+                                <span class="contact-value">24/7 Support</span>
+                            </div>
+                        </div>
+                        <a href="about.html" class="btn btn-primary">Contact Experts</a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Call to Action -->
+        <section class="cta-section">
+            <div class="container">
+                <div class="cta-content animate-fade">
+                    <h2>Need More Information?</h2>
+                    <p>Explore our comprehensive guides or contact our experts</p>
+                    <div class="cta-buttons">
+                        <a href="paddy-seeds.html" class="btn btn-primary">
+                            <span class="btn-icon">🌾</span> Explore Seeds
+                        </a>
+                        <a href="about.html" class="btn btn-secondary">
+                            <span class="btn-icon">📞</span> Contact Us
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <div class="logo">🌾 GoviYa<span>.lk</span></div>
+                <p>Empowering Sri Lankan paddy farmers with modern agricultural knowledge and expert guidance.</p>
+                <div class="footer-social">
+                    <a href="#" class="social-link" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-link" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-link" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" class="social-link" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul class="footer-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="description.html">Description</a></li>
+                    <li><a href="paddy-seeds.html">Paddy Seeds</a></li>
+                    <li><a href="diseases.html">Diseases &amp; Medicines</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Helplines</h4>
+                <ul class="footer-links">
+                    <li><a href="#">1920 – Govi Sevana</a></li>
+                    <li><a href="#">1919 – Agri Emergency</a></li>
+                    <li><a href="#">+94 81 2388331</a></li>
+                    <li><a href="#">+94 11 2869553</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 GoviYa.lk — All Rights Reserved</p>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" title="Back to top">↑</button>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+</html>
